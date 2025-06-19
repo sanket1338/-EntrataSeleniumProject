@@ -1,23 +1,23 @@
-# Entrata.com Selenium Automation Framework
+Entrata.com Selenium Automation Framework
 
 This is a TestNG-based Selenium test automation framework designed to validate key functionality of [Entrata.com](https://www.entrata.com). The framework follows Page Object Model (POM) structure with utility-driven enhancements for better maintainability and reporting.
 
----
 
-## Features
 
-- **Language**: Java  
-- **Frameworks**: TestNG, Maven  
-- **Design Pattern**: Page Object Model (POM)  
-- **Build Tool**: Maven  
-- **Logging**: Log4j2  
-- **Reporting**: ExtentReports  
-- **Utilities**: Dynamic waits, Screenshot capture, Config reader  
-- **Browser Support**: Chrome, Edge (via WebDriverManager)
+Features
 
----
+- Language: Java  
+- Frameworks: TestNG, Maven  
+- Design Pattern**: Page Object Model (POM)  
+- Build Tool: Maven  
+- Logging: Log4j2  
+- Reporting: ExtentReports  
+- Utilities: Dynamic waits, Screenshot capture, Config reader  
+- Browser Support: Chrome, Edge (via WebDriverManager)
 
-## Project Structure
+
+
+Project Structure
 src/main/java/pages/ – Contains all the Page Object classes like HomePage.java that abstract UI interactions.
 
 src/main/java/utils/ – Includes utility classes such as WaitUtils, ConfigReader, ScreenshotUtil, and ExtentManager.
@@ -41,57 +41,57 @@ pom.xml – Manages project dependencies, plugins, and build configuration.
 README.md – Contains project documentation and usage instructions.
 
 
----
 
-## Prerequisites
+
+Prerequisites
 
 - Java 17 or higher
 - Maven
 - Chrome or Edge browser
 - Internet access
 
----
 
-## Configuration
 
-### `src/main/resources/config.properties`
+Configuration
 
-```
+`src/main/resources/config.properties`
+
+
 browser=chrome
 baseUrl=https://www.entrata.com
 
-# Demo Form Data
+Demo Form Data
 demo.firstname=John
 demo.lastname=Doe
 demo.email=john.doe@example.com
 demo.phone=9999999999
-```
 
----
 
-## Running Tests
 
-### Using TestNG (Default Suite)
 
-```bash
+Running Tests
+
+Using TestNG (Default Suite)
+
+bash
 mvn clean test
-```
 
-### Using specific test class from IDE
+
+Using specific test class from IDE
 
 Right-click on any `@Test` method in `EntrataTests.java` > Run as TestNG Test.
 
----
 
-## Reports & Logs
 
-- **HTML Report**: `test-output/ExtentReport.html`
-- **Screenshots (on failure)**: `screenshots/`
-- **Logs**: Console + File (optional)
+Reports & Logs
 
----
+- HTML Report: `test-output/ExtentReport.html`
+- Screenshots (on failure): `screenshots/`
+- Logs: Console + File (optional)
 
-## Test Coverage
+
+
+Test Coverage
 1) Navigation to ResidentPay
 Verifies that hovering over the "Products" menu and selecting "ResidentPay" redirects to the correct page and checks for the expected page title.
 
@@ -115,15 +115,14 @@ Scrolls to the embedded Wistia video section and checks whether the video contai
 | TC04         | Navigate to Careers page from footer              | `testCareersNavigation()`      |
 | TC05         | Validate presence and playability of video        | `testVideoPlaybackPresence()` |
 
----
 
-## Clean Up
+
+Clean Up
 
 To delete reports and screenshots:
 
-```bash
+bash
 mvn clean
-```
 
----
+
 
