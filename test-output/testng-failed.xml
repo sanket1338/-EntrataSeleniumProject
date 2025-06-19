@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Entrata Test Suite]">
+  <test thread-count="5" name="Entrata Functional Tests(failed)">
+    <classes>
+      <class name="tests.EntrataTests">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="captureFailure"/>
+          <include name="setupExtent"/>
+          <include name="tearDownExtent"/>
+          <include name="testResidentPayNavigation"/>
+        </methods>
+      </class> <!-- tests.EntrataTests -->
+    </classes>
+  </test> <!-- Entrata Functional Tests(failed) -->
+</suite> <!-- Failed suite [Entrata Test Suite] -->

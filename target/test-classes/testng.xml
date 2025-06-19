@@ -1,0 +1,8 @@
+
+<suite name="Entrata Test Suite">
+  <test name="Entrata Functional Tests">
+    <classes>
+      <class name="tests.EntrataTests"/>
+    </classes>
+  </test>
+</suite>
