@@ -30,7 +30,7 @@ src/test/java/tests/ – TestNG test classes are placed here, such as EntrataTes
 
 src/test/resources/ – Stores the testng.xml test suite definition file.
 
-screenshots/ – This folder stores screenshots captured during test failures.
+screenshots/ – This folder stores screenshots captured during test.
 
 test-output/ – TestNG automatically generates reports in this directory after each test run.
 
@@ -86,7 +86,7 @@ Right-click on any `@Test` method in `EntrataTests.java` > Run as TestNG Test.
 Reports & Logs
 
 - HTML Report: `test-output/ExtentReport.html`
-- Screenshots (on failure): `screenshots/`
+- Screenshots: `screenshots/`
 - Logs: Console + File (optional)
 
 
